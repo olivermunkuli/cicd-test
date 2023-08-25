@@ -7,11 +7,12 @@ FROM base AS final
 WORKDIR /app
 RUN apt-get update && apt-get install -y nano bash
 
-# Copy the published output of the projects from previous build stage
-COPY --from=publish /app/publish/DockerTester /app/DockerTester
-COPY --from=publish /app/publish/AutogasSA.Common.Logging /app/AutogasSA.Common.Logging
-COPY --from=publish /app/publish/AutogasSA.Common.Logging.Interfaces /app/AutogasSA.Common.Logging.Interfaces
-COPY --from=publish /app/publish/AutogasSA.Common.Utilities /app/AutogasSA.Common.Utilities
+# Copy the already built and published output of the projects from GitHub Actions
+COPY DockerTester/bin/Release/net7.0/publish /app/DockerTester
+COPY AutogasSA.Common.Logging/bin/Release/net7.0/publish /app/AutogasSA.Common.Logging
+COPY AutogasSA.Common.Logging.Interfaces/bin/Release/net7.0/publish /app/AutogasSA.Common.Logging.Interfaces
+COPY AutogasSA.Common.Utilities/bin/Release/net7.0/publish /app/AutogasSA.Common.Utilities
+
 COPY DockerTester/*.json . 
 RUN chmod g+w /app/appsettings.json && chown -R appuser:root /app/appsettings.json
 
