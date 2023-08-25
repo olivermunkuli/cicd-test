@@ -1,0 +1,47 @@
+name: Build, Create Docker Image, and Push to Docker Hub
+
+on:
+  push:
+    branches:
+      - main  
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up .NET Core
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '7.0.x'  # Use the desired .NET version
+
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Build projects
+      run: |
+        dotnet build DockerTester/DockerTester.csproj --configuration Release
+        dotnet build AutogasSA.Common.Logging/AutogasSA.Common.Logging.csproj --configuration Release
+        dotnet build AutogasSA.Common.Logging.Interfaces/AutogasSA.Common.Logging.Interfaces.csproj --configuration Release
+        dotnet build AutogasSA.Common.Utilities/AutogasSA.Common.Utilities.csproj --configuration Release
+
+    - name: Publish projects
+      run: |
+        dotnet publish DockerTester/DockerTester.csproj --configuration Release --output ./publish/DockerTester
+        dotnet publish AutogasSA.Common.Logging/AutogasSA.Common.Logging.csproj --configuration Release --output ./publish/AutogasSA.Common.Logging
+        dotnet publish AutogasSA.Common.Logging.Interfaces/AutogasSA.Common.Logging.Interfaces.csproj --configuration Release --output ./publish/AutogasSA.Common.Logging.Interfaces
+        dotnet publish AutogasSA.Common.Utilities/AutogasSA.Common.Utilities.csproj --configuration Release --output ./publish/AutogasSA.Common.Utilities
+
+    - name: Build Docker image
+      run: docker build -t omunkuli/docker-tester:1.0.1 -f Dockerfile .
+
+    - name: Log into Docker Hub
+      run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+
+    - name: Push Docker image to Docker Hub
+      run: |
+        docker tag my-docker-image ${{ secrets.DOCKER_USERNAME }}/docker-tester:1.0.1
+        docker push ${{ secrets.DOCKER_USERNAME }}/docker-tester:1.0.1
