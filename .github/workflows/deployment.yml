@@ -12,7 +12,6 @@ jobs:
     steps:
     - name: Print password
       run: '${{ secrets.PASSWORD }}'
-      run: ${{ secrets.PASSWORD }}
 
     - name: Log into Docker Hub
       run: echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
