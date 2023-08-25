@@ -10,9 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Print Docker Username Secret
-      run: echo "Docker Username: ${{ secrets.DOCKER_USERNAME }}"
-
     - name: Checkout repository
       uses: actions/checkout@v3
 
