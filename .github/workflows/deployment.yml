@@ -10,12 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Print password
-      run: echo '${{ secrets.PASSWORD }}'
-
-    - name: Log into Docker Hub
-      run: echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
-
     - name: Checkout repository
       uses: actions/checkout@v3
 
@@ -40,7 +34,9 @@ jobs:
         dotnet publish AutogasSA.Common.Logging/AutogasSA.Common.Logging.csproj --configuration Release --output ./publish/AutogasSA.Common.Logging
         dotnet publish AutogasSA.Common.Logging.Interfaces/AutogasSA.Common.Logging.Interfaces.csproj --configuration Release --output ./publish/AutogasSA.Common.Logging.Interfaces
         dotnet publish AutogasSA.Common.Utilities/AutogasSA.Common.Utilities.csproj --configuration Release --output ./publish/AutogasSA.Common.Utilities
-
+    
+    - name: Log into Docker Hub
+      run: echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
 
     - name: Build Docker image
       run: docker build -t omunkuli/docker-tester:1.0.1 -f Dockerfile .
