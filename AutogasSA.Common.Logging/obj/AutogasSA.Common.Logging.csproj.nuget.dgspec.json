@@ -1,0 +1,208 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Logging\\AutogasSA.Common.Logging.csproj": {}
+  },
+  "projects": {
+    "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Logging.Interfaces\\AutogasSA.Common.Logging.Interfaces.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Logging.Interfaces\\AutogasSA.Common.Logging.Interfaces.csproj",
+        "projectName": "AutogasSA.Common.Logging.Interfaces",
+        "projectPath": "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Logging.Interfaces\\AutogasSA.Common.Logging.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\olive\\.nuget\\packages\\",
+        "outputPath": "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Logging.Interfaces\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\olive\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Logging\\AutogasSA.Common.Logging.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Logging\\AutogasSA.Common.Logging.csproj",
+        "projectName": "AutogasSA.Common.Logging",
+        "projectPath": "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Logging\\AutogasSA.Common.Logging.csproj",
+        "packagesPath": "C:\\Users\\olive\\.nuget\\packages\\",
+        "outputPath": "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Logging\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\olive\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Logging.Interfaces\\AutogasSA.Common.Logging.Interfaces.csproj": {
+                "projectPath": "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Logging.Interfaces\\AutogasSA.Common.Logging.Interfaces.csproj"
+              },
+              "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Utilities\\AutogasSA.Common.Utilities.csproj": {
+                "projectPath": "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Utilities\\AutogasSA.Common.Utilities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Serilog.Formatting.Compact": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Utilities\\AutogasSA.Common.Utilities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Utilities\\AutogasSA.Common.Utilities.csproj",
+        "projectName": "AutogasSA.Common.Utilities",
+        "projectPath": "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Utilities\\AutogasSA.Common.Utilities.csproj",
+        "packagesPath": "C:\\Users\\olive\\.nuget\\packages\\",
+        "outputPath": "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Utilities\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\olive\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

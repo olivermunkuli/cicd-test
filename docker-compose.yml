@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  dockertester:
+    image: omunkuli/docker-tester:1.0.0
+    build:
+      context: .
+    volumes:
+      - C:\logs:/app/logs
+      - C:\temp:/app/data
