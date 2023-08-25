@@ -12,7 +12,6 @@ COPY --from=publish /app/publish/DockerTester /app/DockerTester
 COPY --from=publish /app/publish/AutogasSA.Common.Logging /app/AutogasSA.Common.Logging
 COPY --from=publish /app/publish/AutogasSA.Common.Logging.Interfaces /app/AutogasSA.Common.Logging.Interfaces
 COPY --from=publish /app/publish/AutogasSA.Common.Utilities /app/AutogasSA.Common.Utilities
-
 COPY DockerTester/*.json . 
 RUN chmod g+w /app/appsettings.json && chown -R appuser:root /app/appsettings.json
 
