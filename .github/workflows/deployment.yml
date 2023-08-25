@@ -35,11 +35,8 @@ jobs:
         dotnet publish AutogasSA.Common.Logging.Interfaces/AutogasSA.Common.Logging.Interfaces.csproj --configuration Release --output ./publish/AutogasSA.Common.Logging.Interfaces
         dotnet publish AutogasSA.Common.Utilities/AutogasSA.Common.Utilities.csproj --configuration Release --output ./publish/AutogasSA.Common.Utilities
     
-    - name: Print username and password
-      run: echo ${{ secrets.DOCKER_PASSWORD | quote }}
-
     - name: Print password
-      run: echo ${{ vars.PASSWORD | quote }} 
+      run: echo ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Log into Docker Hub
       run: echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
