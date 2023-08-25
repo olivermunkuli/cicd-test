@@ -29,17 +29,13 @@ jobs:
         dotnet build AutogasSA.Common.Utilities/AutogasSA.Common.Utilities.csproj --configuration Release
 
     - name: Publish projects
-      run: |
-        dotnet publish DockerTester/DockerTester.csproj --configuration Release --output ./publish/DockerTester
-        dotnet publish AutogasSA.Common.Logging/AutogasSA.Common.Logging.csproj --configuration Release --output ./publish/AutogasSA.Common.Logging
-        dotnet publish AutogasSA.Common.Logging.Interfaces/AutogasSA.Common.Logging.Interfaces.csproj --configuration Release --output ./publish/AutogasSA.Common.Logging.Interfaces
-        dotnet publish AutogasSA.Common.Utilities/AutogasSA.Common.Utilities.csproj --configuration Release --output ./publish/AutogasSA.Common.Utilities
-    
+      run: dotnet publish DockerTester/DockerTester.csproj --configuration Release --output ./publish/DockerTester
+   
     - name: Log into Docker Hub
       run: echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
 
     - name: Build Docker Image
-      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/docker-tester:1.0.1 -f Dockerfile .
+      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/docker-tester:1.0.2 -f Dockerfile .
 
     - name: Push Docker image to Docker Hub
-      run: docker push ${{ secrets.DOCKER_USERNAME }}/docker-tester:1.0.1
+      run: docker push ${{ secrets.DOCKER_USERNAME }}/docker-tester:1.0.2

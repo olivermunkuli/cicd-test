@@ -7,14 +7,10 @@ FROM base AS final
 WORKDIR /app
 RUN apt-get update && apt-get install -y nano bash
 
-# Copy the already built and published output of the projects from GitHub Actions
-COPY ./publish/DockerTester /app/DockerTester
-COPY ./publish/AutogasSA.Common.Logging /app/AutogasSA.Common.Logging
-COPY ./publish/AutogasSA.Common.Logging.Interfaces /app/AutogasSA.Common.Logging.Interfaces
-COPY ./publish/AutogasSA.Common.Utilities /app/AutogasSA.Common.Utilities
+COPY ./publish/DockerTester /app
 
-COPY DockerTester/*.json . 
+COPY appsettings.json . 
 RUN chmod g+w /app/appsettings.json && chown -R appuser:root /app/appsettings.json
 
 USER appuser
-ENTRYPOINT ["dotnet", "DockerTester/DockerTester.dll"]
+ENTRYPOINT ["dotnet", "DockerTester.dll"]
