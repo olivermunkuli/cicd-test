@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y nano bash
 
 COPY ./publish/DockerTester /app
 
-COPY appsettings.json . 
+COPY DockerTester/*.json . 
 RUN chmod g+w /app/appsettings.json && chown -R appuser:root /app/appsettings.json
 
 USER appuser
