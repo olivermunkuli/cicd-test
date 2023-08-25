@@ -8,10 +8,10 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y nano bash
 
 # Copy the already built and published output of the projects from GitHub Actions
-COPY DockerTester/bin/Release/net7.0/publish /app/DockerTester
-COPY AutogasSA.Common.Logging/bin/Release/net7.0/publish /app/AutogasSA.Common.Logging
-COPY AutogasSA.Common.Logging.Interfaces/bin/Release/net7.0/publish /app/AutogasSA.Common.Logging.Interfaces
-COPY AutogasSA.Common.Utilities/bin/Release/net7.0/publish /app/AutogasSA.Common.Utilities
+COPY ./publish/DockerTester /app/DockerTester
+COPY ./publish/AutogasSA.Common.Logging /app/AutogasSA.Common.Logging
+COPY ./publish/AutogasSA.Common.Logging.Interfaces /app/AutogasSA.Common.Logging.Interfaces
+COPY ./publish/AutogasSA.Common.Utilities /app/AutogasSA.Common.Utilities
 
 COPY DockerTester/*.json . 
 RUN chmod g+w /app/appsettings.json && chown -R appuser:root /app/appsettings.json
