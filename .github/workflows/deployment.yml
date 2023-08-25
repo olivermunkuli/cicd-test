@@ -34,12 +34,12 @@ jobs:
         dotnet publish AutogasSA.Common.Logging/AutogasSA.Common.Logging.csproj --configuration Release --output ./publish/AutogasSA.Common.Logging
         dotnet publish AutogasSA.Common.Logging.Interfaces/AutogasSA.Common.Logging.Interfaces.csproj --configuration Release --output ./publish/AutogasSA.Common.Logging.Interfaces
         dotnet publish AutogasSA.Common.Utilities/AutogasSA.Common.Utilities.csproj --configuration Release --output ./publish/AutogasSA.Common.Utilities
+    
+    - name: Log into Docker Hub
+      run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build Docker image
       run: docker build -t omunkuli/docker-tester:1.0.1 -f Dockerfile .
-
-    - name: Log into Docker Hub
-      run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Push Docker image to Docker Hub
       run: |
