@@ -36,7 +36,7 @@ jobs:
         dotnet publish AutogasSA.Common.Utilities/AutogasSA.Common.Utilities.csproj --configuration Release --output ./publish/AutogasSA.Common.Utilities
     
     - name: Print username and password
-      run: echo "Username: ${{ secrets.DOCKER_USERNAME }} | Password: ${{ secrets.DOCKER_PASSWORD | quote }}"
+      run: echo ${{ secrets.DOCKER_PASSWORD | quote }}
 
     - name: Print password
       run: echo ${{ vars.PASSWORD | quote }} 
