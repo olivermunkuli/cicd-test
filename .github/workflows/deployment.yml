@@ -11,7 +11,8 @@ jobs:
 
     steps:
     - name: Print password
-      run: echo ${{ vars.PASSWORD | toJson }}
+      run: echo "Password: ${{ secrets.PASSWORD }}"
+      run: echo "Password: '${{ secrets.PASSWORD }}'"
 
     - name: Log into Docker Hub
       run: echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
@@ -22,7 +23,7 @@ jobs:
     - name: Set up .NET Core
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: '7.0.x'  # Use the desired .NET version
+        dotnet-version: '7.0.x'  
 
     - name: Restore dependencies
       run: dotnet restore
