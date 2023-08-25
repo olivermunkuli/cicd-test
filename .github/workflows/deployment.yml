@@ -38,7 +38,7 @@ jobs:
     - name: Print username
       run: echo ${{ vars.USERNAME }} 
 
-    - name: Print username
+    - name: Print password
       run: echo ${{ vars.PASSWORD }} 
 
     - name: Log into Docker Hub
