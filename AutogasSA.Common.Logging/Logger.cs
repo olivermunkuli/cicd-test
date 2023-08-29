@@ -103,7 +103,7 @@ namespace AutogasSA.Common.Logging
             var platform = Configuration.Setting()["OS:Platform"];
             if (platform == null) return false;
 
-            return true
+            return true;
 
         }
 
