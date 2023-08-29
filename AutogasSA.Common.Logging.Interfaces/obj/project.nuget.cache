@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gRTCy+/zwmsj0v4uO4XJ4/fS2zJotL3Tj3bf/KMjDIRdjrkUGdK7XTgDUNGD4QW7/zw6byqBVC+Tn8c/hVrAig==",
+  "dgSpecHash": "w5g0ifAatNhaQTHe5bVQM4MyJ2NrahihHPha2twO0IbK2vpta/GMX2PEYmmi1uZRLm+OgR1QR6110QNTC/Z5Ew==",
   "success": true,
-  "projectFilePath": "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Logging.Interfaces\\AutogasSA.Common.Logging.Interfaces.csproj",
+  "projectFilePath": "D:\\solutions\\cicd-test\\AutogasSA.Common.Logging.Interfaces\\AutogasSA.Common.Logging.Interfaces.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

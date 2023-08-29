@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XQlhcO/8Eoe6INDExMRjxwY1d5DCjIUpMSFl5/ZbDnGqH02Wqy/ACOdQp+Ybeqcgu2294AdD71vOwtoFKkJkiQ==",
+  "dgSpecHash": "NUTcVNeXNPDXYjeiJ6+0qEvsxH+bQqI6eHsWMHpMZBkvnqwBvh4u+xOq5ZPbnmnAjnP4xCbl8xv+OoIzZUzUeg==",
   "success": true,
-  "projectFilePath": "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Logging\\AutogasSA.Common.Logging.csproj",
+  "projectFilePath": "D:\\solutions\\cicd-test\\AutogasSA.Common.Logging\\AutogasSA.Common.Logging.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\olive\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\olive\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

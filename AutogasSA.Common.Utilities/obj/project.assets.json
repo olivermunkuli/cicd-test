@@ -536,11 +536,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Utilities\\AutogasSA.Common.Utilities.csproj",
+      "projectUniqueName": "D:\\solutions\\cicd-test\\AutogasSA.Common.Utilities\\AutogasSA.Common.Utilities.csproj",
       "projectName": "AutogasSA.Common.Utilities",
-      "projectPath": "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Utilities\\AutogasSA.Common.Utilities.csproj",
+      "projectPath": "D:\\solutions\\cicd-test\\AutogasSA.Common.Utilities\\AutogasSA.Common.Utilities.csproj",
       "packagesPath": "C:\\Users\\olive\\.nuget\\packages\\",
-      "outputPath": "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Utilities\\obj\\",
+      "outputPath": "D:\\solutions\\cicd-test\\AutogasSA.Common.Utilities\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\olive\\AppData\\Roaming\\NuGet\\NuGet.Config",

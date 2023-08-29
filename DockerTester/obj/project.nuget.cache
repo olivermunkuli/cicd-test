@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "t25B0ykkheAs3voPWsgCQh1REvAUOCDBgD8D2gEKp6dCNvMcaW3n3d6PvG6EM9MjVr0hYJHYDw7qn+ZbFdEaQg==",
+  "dgSpecHash": "t5hMDlWxYHVmiDFPb61NQvXI5S+Z6GLcfTQHoKhCxlKqbrzeT+sXCsl6GgJMbHkF2B8qGDjx9VXrsy4lK421Kw==",
   "success": true,
-  "projectFilePath": "D:\\dev\\autogassa\\Playground\\DockerTester\\DockerTester.csproj",
+  "projectFilePath": "D:\\solutions\\cicd-test\\DockerTester\\DockerTester.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\olive\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\olive\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

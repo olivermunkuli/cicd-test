@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Logging.Interfaces\\AutogasSA.Common.Logging.Interfaces.csproj",
+      "projectUniqueName": "D:\\solutions\\cicd-test\\AutogasSA.Common.Logging.Interfaces\\AutogasSA.Common.Logging.Interfaces.csproj",
       "projectName": "AutogasSA.Common.Logging.Interfaces",
-      "projectPath": "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Logging.Interfaces\\AutogasSA.Common.Logging.Interfaces.csproj",
+      "projectPath": "D:\\solutions\\cicd-test\\AutogasSA.Common.Logging.Interfaces\\AutogasSA.Common.Logging.Interfaces.csproj",
       "packagesPath": "C:\\Users\\olive\\.nuget\\packages\\",
-      "outputPath": "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Logging.Interfaces\\obj\\",
+      "outputPath": "D:\\solutions\\cicd-test\\AutogasSA.Common.Logging.Interfaces\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\olive\\AppData\\Roaming\\NuGet\\NuGet.Config",

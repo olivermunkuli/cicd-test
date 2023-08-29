@@ -22,20 +22,33 @@ jobs:
       run: dotnet restore
 
     - name: Build projects
+      id: build-projects
       run: |
         dotnet build DockerTester/DockerTester.csproj --configuration Release
         dotnet build AutogasSA.Common.Logging/AutogasSA.Common.Logging.csproj --configuration Release
         dotnet build AutogasSA.Common.Logging.Interfaces/AutogasSA.Common.Logging.Interfaces.csproj --configuration Release
         dotnet build AutogasSA.Common.Utilities/AutogasSA.Common.Utilities.csproj --configuration Release
+        dotnet build AutogasSA.Common.Logging.Tests/AutogasSA.Common.Logging.Tests.csproj --configuration Release
+ 
+    - name: Run unit tests
+      id: run-unit-tests
+      if: steps.build-projects.outcome == 'success'
+      run: dotnet test AutogasSA.Common.Logging.Tests/AutogasSA.Common.Logging.Tests.csproj --configuration Release
 
-    - name: Publish projects
+    - name: Publish main project
+      id: publish-main-project
+      if: steps.run-unit-tests.outcome == 'success'
       run: dotnet publish DockerTester/DockerTester.csproj --configuration Release --output ./publish/DockerTester
    
-    - name: Log into Docker Hub
+    - name: Log into docker Hub  
+      id: log-into-dockerhub
+      if: steps.publish-main-project.outcome == 'success'
       run: echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
 
-    - name: Build Docker Image
+    - name: Build docker image
+      id: build-docker-image
+      if: steps.log-into-dockerhub.outcome == 'success'
       run: docker build -t ${{ secrets.DOCKER_USERNAME }}/docker-tester:1.0.2 -f Dockerfile .
 
-    - name: Push Docker image to Docker Hub
+    - name: Push docker image to docker hub
       run: docker push ${{ secrets.DOCKER_USERNAME }}/docker-tester:1.0.2

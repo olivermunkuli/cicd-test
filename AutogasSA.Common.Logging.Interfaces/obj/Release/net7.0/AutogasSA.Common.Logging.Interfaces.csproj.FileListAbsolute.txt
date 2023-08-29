@@ -9,3 +9,14 @@ D:\dev\autogassa\AutogasSA.Common.Logging.Interfaces\obj\Release\net7.0\AutogasS
 D:\dev\autogassa\AutogasSA.Common.Logging.Interfaces\obj\Release\net7.0\refint\AutogasSA.Common.Logging.Interfaces.dll
 D:\dev\autogassa\AutogasSA.Common.Logging.Interfaces\obj\Release\net7.0\AutogasSA.Common.Logging.Interfaces.pdb
 D:\dev\autogassa\AutogasSA.Common.Logging.Interfaces\obj\Release\net7.0\ref\AutogasSA.Common.Logging.Interfaces.dll
+D:\solutions\cicd-test\AutogasSA.Common.Logging.Interfaces\bin\Release\net7.0\AutogasSA.Common.Logging.Interfaces.deps.json
+D:\solutions\cicd-test\AutogasSA.Common.Logging.Interfaces\bin\Release\net7.0\AutogasSA.Common.Logging.Interfaces.dll
+D:\solutions\cicd-test\AutogasSA.Common.Logging.Interfaces\bin\Release\net7.0\AutogasSA.Common.Logging.Interfaces.pdb
+D:\solutions\cicd-test\AutogasSA.Common.Logging.Interfaces\obj\Release\net7.0\AutogasSA.Common.Logging.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+D:\solutions\cicd-test\AutogasSA.Common.Logging.Interfaces\obj\Release\net7.0\AutogasSA.Common.Logging.Interfaces.AssemblyInfoInputs.cache
+D:\solutions\cicd-test\AutogasSA.Common.Logging.Interfaces\obj\Release\net7.0\AutogasSA.Common.Logging.Interfaces.AssemblyInfo.cs
+D:\solutions\cicd-test\AutogasSA.Common.Logging.Interfaces\obj\Release\net7.0\AutogasSA.Common.Logging.Interfaces.csproj.CoreCompileInputs.cache
+D:\solutions\cicd-test\AutogasSA.Common.Logging.Interfaces\obj\Release\net7.0\AutogasSA.Common.Logging.Interfaces.dll
+D:\solutions\cicd-test\AutogasSA.Common.Logging.Interfaces\obj\Release\net7.0\refint\AutogasSA.Common.Logging.Interfaces.dll
+D:\solutions\cicd-test\AutogasSA.Common.Logging.Interfaces\obj\Release\net7.0\AutogasSA.Common.Logging.Interfaces.pdb
+D:\solutions\cicd-test\AutogasSA.Common.Logging.Interfaces\obj\Release\net7.0\ref\AutogasSA.Common.Logging.Interfaces.dll

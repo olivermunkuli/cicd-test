@@ -73,7 +73,37 @@ namespace AutogasSA.Common.Logging
                 return Path.Combine(logPath, "log-.txt");
             }
 
-            throw new Exception("Please check the logging configuration. Logging has not been configured properly.");
+            return "";
+
+        }
+
+        private bool ValidSettings()
+        {
+            var endPoint = Configuration.Setting()["APIGateway:Endpoint"];
+            if (endPoint == null) return false;
+
+            var contentType = Configuration.Setting()["APIGateway:ContentType"];
+            if (contentType == null) return false;
+
+            var input = Configuration.Setting()["Data:Input"];
+            if (input == null) return false;
+
+            var archive = Configuration.Setting()["Data:Archive"];
+            if (archive == null) return false;
+
+            var logFolder = Configuration.Setting()["Logs:LogFolder"];
+            if (logFolder == null) return false;
+
+            var folderName = Configuration.Setting()["Logs:FolderName"];
+            if (folderName == null) return false;
+
+            var name = Configuration.Setting()["App:Name"];
+            if (name == null) return false;
+
+            var platform = Configuration.Setting()["OS:Platform"];
+            if (platform == null) return false;
+
+            return true;
 
         }
 

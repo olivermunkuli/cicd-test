@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutogasSA.Common.Utilities"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutogasSA.Common.Logging", "AutogasSA.Common.Logging\AutogasSA.Common.Logging.csproj", "{890E63C2-0FAC-4552-B14E-F7C617A8B7A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutogasSA.Common.Logging.Tests", "AutogasSA.Common.Logging.Tests\AutogasSA.Common.Logging.Tests.csproj", "{83B03979-3B15-46A6-BAD7-5DE97C884639}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{890E63C2-0FAC-4552-B14E-F7C617A8B7A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{890E63C2-0FAC-4552-B14E-F7C617A8B7A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{890E63C2-0FAC-4552-B14E-F7C617A8B7A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83B03979-3B15-46A6-BAD7-5DE97C884639}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83B03979-3B15-46A6-BAD7-5DE97C884639}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83B03979-3B15-46A6-BAD7-5DE97C884639}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83B03979-3B15-46A6-BAD7-5DE97C884639}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

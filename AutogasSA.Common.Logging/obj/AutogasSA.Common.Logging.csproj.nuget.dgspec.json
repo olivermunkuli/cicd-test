@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Logging\\AutogasSA.Common.Logging.csproj": {}
+    "D:\\solutions\\cicd-test\\AutogasSA.Common.Logging\\AutogasSA.Common.Logging.csproj": {}
   },
   "projects": {
-    "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Logging.Interfaces\\AutogasSA.Common.Logging.Interfaces.csproj": {
+    "D:\\solutions\\cicd-test\\AutogasSA.Common.Logging.Interfaces\\AutogasSA.Common.Logging.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Logging.Interfaces\\AutogasSA.Common.Logging.Interfaces.csproj",
+        "projectUniqueName": "D:\\solutions\\cicd-test\\AutogasSA.Common.Logging.Interfaces\\AutogasSA.Common.Logging.Interfaces.csproj",
         "projectName": "AutogasSA.Common.Logging.Interfaces",
-        "projectPath": "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Logging.Interfaces\\AutogasSA.Common.Logging.Interfaces.csproj",
+        "projectPath": "D:\\solutions\\cicd-test\\AutogasSA.Common.Logging.Interfaces\\AutogasSA.Common.Logging.Interfaces.csproj",
         "packagesPath": "C:\\Users\\olive\\.nuget\\packages\\",
-        "outputPath": "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Logging.Interfaces\\obj\\",
+        "outputPath": "D:\\solutions\\cicd-test\\AutogasSA.Common.Logging.Interfaces\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\olive\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,14 +59,14 @@
         }
       }
     },
-    "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Logging\\AutogasSA.Common.Logging.csproj": {
+    "D:\\solutions\\cicd-test\\AutogasSA.Common.Logging\\AutogasSA.Common.Logging.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Logging\\AutogasSA.Common.Logging.csproj",
+        "projectUniqueName": "D:\\solutions\\cicd-test\\AutogasSA.Common.Logging\\AutogasSA.Common.Logging.csproj",
         "projectName": "AutogasSA.Common.Logging",
-        "projectPath": "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Logging\\AutogasSA.Common.Logging.csproj",
+        "projectPath": "D:\\solutions\\cicd-test\\AutogasSA.Common.Logging\\AutogasSA.Common.Logging.csproj",
         "packagesPath": "C:\\Users\\olive\\.nuget\\packages\\",
-        "outputPath": "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Logging\\obj\\",
+        "outputPath": "D:\\solutions\\cicd-test\\AutogasSA.Common.Logging\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\olive\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,11 +83,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Logging.Interfaces\\AutogasSA.Common.Logging.Interfaces.csproj": {
-                "projectPath": "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Logging.Interfaces\\AutogasSA.Common.Logging.Interfaces.csproj"
+              "D:\\solutions\\cicd-test\\AutogasSA.Common.Logging.Interfaces\\AutogasSA.Common.Logging.Interfaces.csproj": {
+                "projectPath": "D:\\solutions\\cicd-test\\AutogasSA.Common.Logging.Interfaces\\AutogasSA.Common.Logging.Interfaces.csproj"
               },
-              "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Utilities\\AutogasSA.Common.Utilities.csproj": {
-                "projectPath": "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Utilities\\AutogasSA.Common.Utilities.csproj"
+              "D:\\solutions\\cicd-test\\AutogasSA.Common.Utilities\\AutogasSA.Common.Utilities.csproj": {
+                "projectPath": "D:\\solutions\\cicd-test\\AutogasSA.Common.Utilities\\AutogasSA.Common.Utilities.csproj"
               }
             }
           }
@@ -139,14 +139,14 @@
         }
       }
     },
-    "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Utilities\\AutogasSA.Common.Utilities.csproj": {
+    "D:\\solutions\\cicd-test\\AutogasSA.Common.Utilities\\AutogasSA.Common.Utilities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Utilities\\AutogasSA.Common.Utilities.csproj",
+        "projectUniqueName": "D:\\solutions\\cicd-test\\AutogasSA.Common.Utilities\\AutogasSA.Common.Utilities.csproj",
         "projectName": "AutogasSA.Common.Utilities",
-        "projectPath": "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Utilities\\AutogasSA.Common.Utilities.csproj",
+        "projectPath": "D:\\solutions\\cicd-test\\AutogasSA.Common.Utilities\\AutogasSA.Common.Utilities.csproj",
         "packagesPath": "C:\\Users\\olive\\.nuget\\packages\\",
-        "outputPath": "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Utilities\\obj\\",
+        "outputPath": "D:\\solutions\\cicd-test\\AutogasSA.Common.Utilities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\olive\\AppData\\Roaming\\NuGet\\NuGet.Config",

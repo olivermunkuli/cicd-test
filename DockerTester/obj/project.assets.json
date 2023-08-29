@@ -1450,11 +1450,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dev\\autogassa\\Playground\\DockerTester\\DockerTester.csproj",
+      "projectUniqueName": "D:\\solutions\\cicd-test\\DockerTester\\DockerTester.csproj",
       "projectName": "DockerTester",
-      "projectPath": "D:\\dev\\autogassa\\Playground\\DockerTester\\DockerTester.csproj",
+      "projectPath": "D:\\solutions\\cicd-test\\DockerTester\\DockerTester.csproj",
       "packagesPath": "C:\\Users\\olive\\.nuget\\packages\\",
-      "outputPath": "D:\\dev\\autogassa\\Playground\\DockerTester\\obj\\",
+      "outputPath": "D:\\solutions\\cicd-test\\DockerTester\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\olive\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1471,11 +1471,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Logging\\AutogasSA.Common.Logging.csproj": {
-              "projectPath": "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Logging\\AutogasSA.Common.Logging.csproj"
+            "D:\\solutions\\cicd-test\\AutogasSA.Common.Logging\\AutogasSA.Common.Logging.csproj": {
+              "projectPath": "D:\\solutions\\cicd-test\\AutogasSA.Common.Logging\\AutogasSA.Common.Logging.csproj"
             },
-            "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Utilities\\AutogasSA.Common.Utilities.csproj": {
-              "projectPath": "D:\\dev\\autogassa\\Playground\\AutogasSA.Common.Utilities\\AutogasSA.Common.Utilities.csproj"
+            "D:\\solutions\\cicd-test\\AutogasSA.Common.Utilities\\AutogasSA.Common.Utilities.csproj": {
+              "projectPath": "D:\\solutions\\cicd-test\\AutogasSA.Common.Utilities\\AutogasSA.Common.Utilities.csproj"
             }
           }
         }

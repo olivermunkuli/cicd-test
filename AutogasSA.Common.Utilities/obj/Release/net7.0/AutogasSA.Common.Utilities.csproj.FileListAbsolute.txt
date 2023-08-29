@@ -10,3 +10,15 @@ D:\dev\autogassa\AutogasSA.Common.Utilities\obj\Release\net7.0\AutogasSA.Common.
 D:\dev\autogassa\AutogasSA.Common.Utilities\obj\Release\net7.0\refint\AutogasSA.Common.Utilities.dll
 D:\dev\autogassa\AutogasSA.Common.Utilities\obj\Release\net7.0\AutogasSA.Common.Utilities.pdb
 D:\dev\autogassa\AutogasSA.Common.Utilities\obj\Release\net7.0\ref\AutogasSA.Common.Utilities.dll
+D:\solutions\cicd-test\AutogasSA.Common.Utilities\bin\Release\net7.0\AutogasSA.Common.Utilities.deps.json
+D:\solutions\cicd-test\AutogasSA.Common.Utilities\bin\Release\net7.0\AutogasSA.Common.Utilities.dll
+D:\solutions\cicd-test\AutogasSA.Common.Utilities\bin\Release\net7.0\AutogasSA.Common.Utilities.pdb
+D:\solutions\cicd-test\AutogasSA.Common.Utilities\obj\Release\net7.0\AutogasSA.Common.Utilities.csproj.AssemblyReference.cache
+D:\solutions\cicd-test\AutogasSA.Common.Utilities\obj\Release\net7.0\AutogasSA.Common.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+D:\solutions\cicd-test\AutogasSA.Common.Utilities\obj\Release\net7.0\AutogasSA.Common.Utilities.AssemblyInfoInputs.cache
+D:\solutions\cicd-test\AutogasSA.Common.Utilities\obj\Release\net7.0\AutogasSA.Common.Utilities.AssemblyInfo.cs
+D:\solutions\cicd-test\AutogasSA.Common.Utilities\obj\Release\net7.0\AutogasSA.Common.Utilities.csproj.CoreCompileInputs.cache
+D:\solutions\cicd-test\AutogasSA.Common.Utilities\obj\Release\net7.0\AutogasSA.Common.Utilities.dll
+D:\solutions\cicd-test\AutogasSA.Common.Utilities\obj\Release\net7.0\refint\AutogasSA.Common.Utilities.dll
+D:\solutions\cicd-test\AutogasSA.Common.Utilities\obj\Release\net7.0\AutogasSA.Common.Utilities.pdb
+D:\solutions\cicd-test\AutogasSA.Common.Utilities\obj\Release\net7.0\ref\AutogasSA.Common.Utilities.dll
