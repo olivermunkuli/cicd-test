@@ -65,14 +65,14 @@ jobs:
     - name: Build docker image for aws ecr
       id: build-docker-ecr-image
       if: steps.ecr-login.outcome == 'success' 
-      run: docker build -t docker-tester:1.0.0 -f Dockerfile .
+      run: docker build -t testapp:1.0.1 -f Dockerfile .
     
     - name: Tag docker image 
       id: tag-docker-ecr-image
       if: steps.build-docker-ecr-image.outcome == 'success' 
-      run: docker tag docker-tester:1.0.0 ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.us-east-1.amazonaws.com/docker-tester:1.0.0
+      run: docker tag testapp:1.0.1 ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.us-east-1.amazonaws.com/testapp:1.0.1
 
     - name: Push docker image to aws ecr
       id: push-docker-image-ecr
       if: steps.tag-docker-ecr-image.outcome == 'success' 
-      run: docker push ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.us-east-1.amazonaws.com/docker-tester:1.0.0
+      run: docker push ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.us-east-1.amazonaws.com/testapp:1.0.1
