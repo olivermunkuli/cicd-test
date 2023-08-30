@@ -48,11 +48,11 @@ jobs:
     - name: Build docker image for github
       id: build-docker-image-github
       if: steps.log-into-dockerhub.outcome == 'success'
-      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/docker-tester:1.0.4 -f Dockerfile .
+      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/docker-tester:1.0.5 -f Dockerfile .
 
     - name: Push docker image to docker hub
       if: steps.build-docker-image-github.outcome == 'success'
-      run: docker push ${{ secrets.DOCKER_USERNAME }}/docker-tester:1.0.4
+      run: docker push ${{ secrets.DOCKER_USERNAME }}/docker-tester:1.0.5
 
     - name: Log into AWS ECR
       id: ecr-login
@@ -70,7 +70,7 @@ jobs:
     - name: Tag docker image 
       id: tag-docker-ecr-image
       if: steps.build-docker-ecr-image.outcome == 'success' 
-      run: docker tag docker-tester:1.0.1 ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.us-east-1.amazonaws.com/docker-tester:1.0.0
+      run: docker tag docker-tester:1.0.0 ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.us-east-1.amazonaws.com/docker-tester:1.0.0
 
   
     - name: Push docker image to aws ecr
