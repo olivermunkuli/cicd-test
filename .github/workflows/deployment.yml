@@ -45,10 +45,35 @@ jobs:
       if: steps.publish-main-project.outcome == 'success'
       run: echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
 
-    - name: Build docker image
-      id: build-docker-image
+    - name: Build docker image for github
+      id: build-docker-image-github
       if: steps.log-into-dockerhub.outcome == 'success'
-      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/docker-tester:1.0.3 -f Dockerfile .
+      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/docker-tester:1.0.4 -f Dockerfile .
 
     - name: Push docker image to docker hub
-      run: docker push ${{ secrets.DOCKER_USERNAME }}/docker-tester:1.0.3
+      if: steps.build-docker-image-github.outcome == 'success'
+      run: docker push ${{ secrets.DOCKER_USERNAME }}/docker-tester:1.0.4
+
+    - name: Log into AWS ECR
+      id: ecr-login
+      if: steps.publish-main-project.outcome == 'success'
+      run: |
+        aws configure set aws_access_key_id ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws configure set aws_secret_access_key ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.us-east-1.amazonaws.com
+        
+    - name: Build docker image for aws ecr
+      id: build-docker-ecr-image
+      if: steps.ecr-login.outcome == 'success' 
+      run: docker build -t docker-tester:1.0.0 -f Dockerfile .
+    
+    - name: Tag docker image 
+      id: tag-docker-ecr-image
+      if: steps.build-docker-ecr-image.outcome == 'success' 
+      run: docker tag docker-tester:1.0.1 ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.us-east-1.amazonaws.com/docker-tester:1.0.0
+
+  
+    - name: Push docker image to aws ecr
+      id: push-docker-image-ecr
+      if: steps.tag-docker-ecr-image.outcome == 'success' 
+      run: docker tag docker-tester:1.0.0 ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.us-east-1.amazonaws.com/docker-tester:1.0.0
